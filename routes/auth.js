@@ -1,0 +1,12 @@
+const express = require('express');
+const authcontroller = require('./../contollers/authhandler');
+const router = express.Router();
+router.post("/login", authcontroller.login);
+router.post("/signup", authcontroller.signup);
+router.post("/otplogin", authcontroller.otplogin);
+router.post("/verifyotp", authcontroller.verifyOTP);
+router.get("/getuserminimumdata", authcontroller.protect, authcontroller.minimumuserdata);
+router.post("/forgetpassword", authcontroller.forgetpassword);
+router.patch("/resetpassword/:token", authcontroller.resetpassword);
+router.delete('/delete', authcontroller.protect, authcontroller.delete);
+module.exports = router;

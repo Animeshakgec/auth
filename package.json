@@ -1,0 +1,29 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "start:prod": "NODE_ENV=production nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.9.0",
+    "morgan": "^1.10.0",
+    "msg91": "^2.0.4",
+    "msg91-v5": "^1.1.0",
+    "nodemailer": "^6.9.1",
+    "otp-generator": "^4.0.1",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
